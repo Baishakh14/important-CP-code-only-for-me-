@@ -1,0 +1,12 @@
+            hobe[0] = 1;
+            for(int i = 0;i<n;i++)
+            {
+                for(int j = sum;j>=ab[i];j--) /// check from last is this sum is possible or not
+                {
+                    if(hobe[j - ab[i]])
+                    {
+                        hobe[j] = 1;
+                        st.insert(j);
+                    }
+                }
+            }
